@@ -1,16 +1,16 @@
-<!-- templates/home.html -->
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}T's Sourdough and Such - Artisan Baked Goods{% endblock %}
 
 {% block content %}
-      {% for product in products %}
+<div class="product-grid">
+    {% for product in products %}
     <div class="product-card">
         <img src="{{ product.image.url }}" alt="{{ product.name }}">
         <h3>{{ product.name }}</h3>
-        <p>${{ product.price }}</p>
+        <p class="price">${{ product.price }}</p>
         <p>{{ product.description }}</p>
-        
     </div>
     {% endfor %}
+</div>
 {% endblock %}

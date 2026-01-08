@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-78jl*#*19**1gx8kj)m3b(79@rx%ri8m^*rp*=e_7!_qmlym5$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tay-bakes.com', 'www.tay-bakes.com', '18.188.172.106']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','tay-bakes.com', 'www.tay-bakes.com', '18.188.172.106']
 
 
 # Application definition
