@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-78jl*#*19**1gx8kj)m3b(79@rx%ri8m^*rp*=e_7!_qmlym5$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['tay-bakes.com', 'www.tay-bakes.com', '18.188.172.106']
 
 
 # Application definition
@@ -116,14 +115,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"] 
+STATIC_ROOT = '/home/ec2-user/taylors-bday/bday/staticfiles'
 
+# Media files (if you're handling user uploads)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/ec2-user/taylors-bday/bday/media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import os
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
