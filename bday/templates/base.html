@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,13 @@
 </head>
 <body>
     <header>
-        <img src="{% static 'logo.jpg' %}" alt="T's Sourdough and Such Logo" class="logo">
+        <div class="logo-container">
+            <img src="{% static 'logo.jpg' %}" alt="T's Sourdough and Such Logo" class="logo">
+        </div>
+        <div class="hero-text">
+            <h1>T's Sourdough and Such</h1>
+            <p>Artisan Baked Goods Made with Love</p>
+        </div>
     </header>
 
     <main>
@@ -19,9 +24,15 @@
     </main>
 
     <footer>
-        <p>Contact me via Facebook <a href="https://www.facebook.com/profile.php?id=61573157506247" target="_blank">here</a> to submit your order!</p>
-        <p>(Web-based ordering coming soon subject to popularity)</p>
-        <p>&copy; 2025 T's Sourdough and Such. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-cta">
+                <h3>Ready to Order?</h3>
+                <p>Contact me via Facebook to submit your order!</p>
+                <a href="https://www.facebook.com/profile.php?id=61573157506247" target="_blank">Order on Facebook →</a>
+            </div>
+            <p style="font-size: 0.95rem; opacity: 0.8;">(Web-based ordering coming soon subject to popularity)</p>
+            <p class="copyright">&copy; 2025 T's Sourdough and Such. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
