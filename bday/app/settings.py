@@ -118,7 +118,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/ec2-user/taylors-bday/bday/staticfiles'
-
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 # Media files (if you're handling user uploads)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/home/ec2-user/taylors-bday/bday/media'
